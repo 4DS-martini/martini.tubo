@@ -7,8 +7,15 @@ public class Tubo {
         if(r <= 0 || h <= 0){
             throw new Exception("Input errati!");
         }
-
         altezza = h;
         raggio = r;
+    }
+
+    public float volume(){
+        return pi*(raggio*raggio)*altezza;
+    }
+
+    public float superficie(){
+        return 2*pi*raggio*altezza;
     }
 }
