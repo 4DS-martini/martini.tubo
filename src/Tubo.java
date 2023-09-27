@@ -18,4 +18,8 @@ public class Tubo {
     public float superficie(){
         return 2*pi*raggio*altezza;
     }
+
+    public String toString() {
+        return "Raggio: " + raggio + "\nAltezza: " + altezza;
+    }
 }
